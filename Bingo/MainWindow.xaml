@@ -8,10 +8,15 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
             <RowDefinition/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Grid x:Name="gdBingo" HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="300" ShowGridLines="True" Background="#FFD4FFF4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="1" x:Name="gdBingo" HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="300" ShowGridLines="True" Background="#FFD4FFF4">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -20,38 +25,41 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Focusable="False" ForceCursor="False"/>
+                <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Label x:Name="lb00" Grid.Row="0" Grid.Column="0" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb01" Grid.Row="0" Grid.Column="1" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb02" Grid.Row="0" Grid.Column="2" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb03" Grid.Row="0" Grid.Column="3" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb04" Grid.Row="0" Grid.Column="4" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb10" Grid.Row="1" Grid.Column="0" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb11" Grid.Row="1" Grid.Column="1" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb12" Grid.Row="1" Grid.Column="2" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb13" Grid.Row="1" Grid.Column="3" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb14" Grid.Row="1" Grid.Column="4" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb20" Grid.Row="2" Grid.Column="0" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb21" Grid.Row="2" Grid.Column="1" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb22" Grid.Row="2" Grid.Column="2" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb23" Grid.Row="2" Grid.Column="3" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb24" Grid.Row="2" Grid.Column="4" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb30" Grid.Row="3" Grid.Column="0" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb31" Grid.Row="3" Grid.Column="1" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb32" Grid.Row="3" Grid.Column="2" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb33" Grid.Row="3" Grid.Column="3" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb34" Grid.Row="3" Grid.Column="4" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb40" Grid.Row="4" Grid.Column="0" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb41" Grid.Row="4" Grid.Column="1" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb42" Grid.Row="4" Grid.Column="2" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb43" Grid.Row="4" Grid.Column="3" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Label x:Name="lb44" Grid.Row="4" Grid.Column="4" MouseDoubleClick="LabelClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt00" Grid.Row="0" Grid.Column="0" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt01" Grid.Row="0" Grid.Column="1" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt02" Grid.Row="0" Grid.Column="2" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt03" Grid.Row="0" Grid.Column="3" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt04" Grid.Row="0" Grid.Column="4" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt10" Grid.Row="1" Grid.Column="0" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt11" Grid.Row="1" Grid.Column="1" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt12" Grid.Row="1" Grid.Column="2" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt13" Grid.Row="1" Grid.Column="3" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt14" Grid.Row="1" Grid.Column="4" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt20" Grid.Row="2" Grid.Column="0" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt21" Grid.Row="2" Grid.Column="1" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt22" Grid.Row="2" Grid.Column="2" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt23" Grid.Row="2" Grid.Column="3" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt24" Grid.Row="2" Grid.Column="4" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt30" Grid.Row="3" Grid.Column="0" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt31" Grid.Row="3" Grid.Column="1" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt32" Grid.Row="3" Grid.Column="2" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderBrush="#FFDDDDDD"/>
+            <Button x:Name="bt33" Grid.Row="3" Grid.Column="3" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt34" Grid.Row="3" Grid.Column="4" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt40" Grid.Row="4" Grid.Column="0" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt41" Grid.Row="4" Grid.Column="1" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt42" Grid.Row="4" Grid.Column="2" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt43" Grid.Row="4" Grid.Column="3" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="bt44" Grid.Row="4" Grid.Column="4" Click="TileClicked" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         </Grid>
-        <Button Content="シャッフル" HorizontalAlignment="Center" Margin="0,25,0,25" Grid.Row="1" Width="72" Click="Button_Click" Height="25" VerticalAlignment="Top"/>
+        <Button  Content="シャッフル" Click="Shuffle" Height="24" VerticalAlignment="Center" Margin="290,0,290,0"/>
+        <ListView Grid.Column="1" x:Name="lvHistory" HorizontalAlignment="Right" Width="100" Grid.RowSpan="3">
+        </ListView>
+        <Label x:Name="lbHash" Grid.Row="2" Margin="290,0,290,0" VerticalAlignment="Center" Focusable="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
     </Grid>
 </Window>
